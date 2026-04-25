@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="age-gate.css">
+    <title>Age Verification</title>
+</head>
+<body>
+
+    <!-- ══ TELA DE BLOQUEIO (caso cookie diga "bloqueado") ══ -->
+    <div id="blocked-screen">
+        <span class="block-icon">🚫</span>
+        <h2>Your access is blocked.</h2>
+        <p>You have stated that you are under 18 years of age, and access to this website is restricted.</p>
+    </div>
+
+    <!-- ══ MODAL DE VERIFICAÇÃO DE IDADE ══ -->
+    <div class="age-modal-wrapper" id="age-gate">
+        <div class="age-modal">
+            <span class="modal-icon">🚫</span>
+            <h1 class="modal-title">+18 Content</h1>
+            <p class="modal-desc">
+                This website contains material intended for adults over 18 years of age.<br>
+                Please do not enter if you are a minor.
+            </p>
+
+            <div class="btn-group">
+                <button class="btn btn-confirm" onclick="confirmAge()">
+                    I'm 18 years older / Enter 
+                </button>
+                <button class="btn btn-deny" onclick="denyAge()">
+                    I'm not 18 years older / Exit 
+                </button>
+            </div>
+
+            <p class="modal-legal">
+                By clicking “Confirm / Enter,” you confirm that you are of legal age and assume responsibility for your browsing.
+            </p>
+        </div>
+    </div>
+
+    <script src="age-gate.js" defer></script>
+</body>
+</html>
