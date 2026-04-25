@@ -16,4 +16,4 @@ Function 2 - If the user confirms they are of legal age, the function redirects 
 
 1 - Place it in your project folder and modify it as needed.
 
-2 - Configure your host so that this requirement is randomized regardless of the URL accessed, for enhanced browsing security.
+2 - For added security, configure your host so that this page is always displayed, regardless of the URL the user enters.
